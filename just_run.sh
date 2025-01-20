@@ -40,10 +40,26 @@ curl -L https://github.com/ryanoasis/nerd-fonts/blob/${NERDFONTVERS}/src/unpatch
 fontforge -lang=ff -script extract-extra-glyphs
 
 # Build patched fonts
-./do_generate 01 -c -c BerkeleyMono-Bold.ttf XBerkMono-Bold.ttf "XBerkMono"
-./do_generate 02 -c -c BerkeleyMono-BoldItalic.ttf XBerkMono-BoldItalic.ttf "XBerkMono"
-./do_generate 03 -c -c BerkeleyMono-Regular.ttf XBerkMono.ttf "XBerkMono"
-./do_generate 04 -c -c BerkeleyMono-Italic.ttf XBerkMono-Italic.ttf "XBerkMono"
+/do_generate 01 -c -c BerkeleyMono-Black-Oblique.ttf XBerkMono-BlackItalic.ttf "XBerkMono"
+/do_generate 02 -c -c BerkeleyMono-Black.ttf XBerkMono-Black.ttf "XBerkMono"
+/do_generate 03 -c -c BerkeleyMono-Bold-Oblique.ttf XBerkMono-BoldItalic.ttf "XBerkMono"
+/do_generate 04 -c -c BerkeleyMono-Bold.ttf XBerkMono-Bold.ttf "XBerkMono"
+/do_generate 05 -c -c BerkeleyMono-ExtraBold-Oblique.ttf XBerkMono-ExtraBold-Italic.ttf "XBerkMono"
+/do_generate 06 -c -c BerkeleyMono-ExtraBold.ttf XBerkMono-ExtraBold.ttf "XBerkMono"
+/do_generate 07 -c -c BerkeleyMono-ExtraLight-Oblique.ttf XBerkMono-ExtraLight-Italic.ttf "XBerkMono"
+/do_generate 08 -c -c BerkeleyMono-ExtraLight.ttf XBerkMono-ExtraLight.ttf "XBerkMono"
+/do_generate 09 -c -c BerkeleyMono-Light-Oblique.ttf XBerkMono-LightItalic.ttf "XBerkMono"
+/do_generate 10 -c -c BerkeleyMono-Light.ttf XBerkMono-Light.ttf "XBerkMono"
+/do_generate 11 -c -c BerkeleyMono-Medium-Oblique.ttf XBerkMono-MediumItalic.ttf "XBerkMono"
+/do_generate 12 -c -c BerkeleyMono-Medium.ttf XBerkMono-Medium.ttf "XBerkMono"
+/do_generate 13 -c -c BerkeleyMono-Oblique.ttf XBerkMono-Italic.ttf "XBerkMono"
+/do_generate 14 -c -c BerkeleyMono-Regular.ttf XBerkMono-Regular.ttf "XBerkMono"
+/do_generate 15 -c -c BerkeleyMono-SemiBold-Oblique.ttf XBerkMono-SemiBold-Italic.ttf "XBerkMono"
+/do_generate 16 -c -c BerkeleyMono-SemiBold.ttf XBerkMono-SemiBold.ttf "XBerkMono"
+/do_generate 17 -c -c BerkeleyMono-SemiLight-Oblique.ttf XBerkMono-SemiLight-Italic.ttf "XBerkMono"
+/do_generate 18 -c -c BerkeleyMono-SemiLight.ttf XBerkMono-SemiLight.ttf "XBerkMono"
+/do_generate 19 -c -c BerkeleyMono-Thin-Oblique.ttf XBerkMono-ThinItalic.ttf "XBerkMono"
+/do_generate 20 -c -c BerkeleyMono-Thin.ttf XBerkMono-Thin.ttf "XBerkMono"
 
 # Rename (some) patched fonts for compliance
 mv XBerkMono.ttf XBerkMono-Regular.ttf
